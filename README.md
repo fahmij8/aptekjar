@@ -3,6 +3,7 @@
 ## Assignments 1 : Getting started with laravel
 
 -   [x] Install laravel
+-   [x] Install laravel-livewire
 -   [x] Install laravel module
 -   [x] Install laratrust
 
