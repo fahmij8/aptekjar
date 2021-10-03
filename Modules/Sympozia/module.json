@@ -1,0 +1,13 @@
+{
+    "name": "Sympozia",
+    "alias": "sympozia",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Sympozia\\Providers\\SympoziaServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
