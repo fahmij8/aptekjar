@@ -12,9 +12,9 @@ return [
     | For detailed instructions you can look the title section here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Basic-Configuration
     |
-    */
+     */
 
-    'title' => 'LMS Module',
+    'title' => 'Sympozia',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -28,7 +28,7 @@ return [
     | For detailed instructions you can look the favicon section here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Basic-Configuration
     |
-    */
+     */
 
     'use_ico_only' => true,
     'use_full_favicon' => false,
@@ -43,9 +43,9 @@ return [
     | For detailed instructions you can look the logo section here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Basic-Configuration
     |
-    */
+     */
 
-    'logo' => 'LMS-<strong class="font-weight-bold">UPI</strong>',
+    'logo' => '<strong>Sympozia</strong>',
     'logo_img' => '/images/UPI.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -62,7 +62,7 @@ return [
     | For detailed instructions you can look the user menu section here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Basic-Configuration
     |
-    */
+     */
 
     'usermenu_enabled' => false,
     'usermenu_header' => false,
@@ -81,7 +81,7 @@ return [
     | For detailed instructions you can look the layout section here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Layout-and-Styling-Configuration
     |
-    */
+     */
 
     'layout_topnav' => null,
     'layout_boxed' => null,
@@ -100,7 +100,7 @@ return [
     | For detailed instructions you can look the auth classes section here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Layout-and-Styling-Configuration
     |
-    */
+     */
 
     'classes_auth_card' => 'card-outline card-primary',
     'classes_auth_header' => '',
@@ -119,7 +119,7 @@ return [
     | For detailed instructions you can look the admin panel classes here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Layout-and-Styling-Configuration
     |
-    */
+     */
 
     'classes_body' => '',
     'classes_brand' => '',
@@ -127,7 +127,7 @@ return [
     'classes_content_wrapper' => '',
     'classes_content_header' => '',
     'classes_content' => '',
-    'classes_sidebar' => 'sidebar-light-gray-dark elevation-4',
+    'classes_sidebar' => 'sidebar-light-gray-dark sidebar-dark elevation-4',
     'classes_sidebar_nav' => '',
     'classes_topnav' => 'navbar-gray-dark navbar-dark elevation-2',
     'classes_topnav_nav' => 'navbar-expand',
@@ -143,13 +143,13 @@ return [
     | For detailed instructions you can look the sidebar section here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Layout-and-Styling-Configuration
     |
-    */
+     */
 
     'sidebar_mini' => 'lg',
     'sidebar_collapse' => false,
     'sidebar_collapse_auto_size' => false,
     'sidebar_collapse_remember' => false,
-    'sidebar_collapse_remember_no_transition' => true,
+    'sidebar_collapse_remember_no_transition' => false,
     'sidebar_scrollbar_theme' => 'os-theme-dark',
     'sidebar_scrollbar_auto_hide' => 'l',
     'sidebar_nav_accordion' => true,
@@ -165,14 +165,14 @@ return [
     | For detailed instructions you can look the right sidebar section here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Layout-and-Styling-Configuration
     |
-    */
+     */
 
     'right_sidebar' => false,
     'right_sidebar_icon' => 'fas fa-cogs',
     'right_sidebar_theme' => 'dark',
     'right_sidebar_slide' => true,
     'right_sidebar_push' => true,
-    'right_sidebar_scrollbar_theme' => 'os-theme-light',
+    'right_sidebar_scrollbar_theme' => 'os-theme-dark',
     'right_sidebar_scrollbar_auto_hide' => 'l',
 
     /*
@@ -185,10 +185,10 @@ return [
     | For detailed instructions you can look the urls section here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Basic-Configuration
     |
-    */
+     */
 
-    'use_route_url' => false,
-    'dashboard_url' => '',
+    'use_route_url' => true,
+    'dashboard_url' => 'sympozia.home',
     'logout_url' => '',
     'login_url' => '',
     'register_url' => '',
@@ -206,7 +206,7 @@ return [
     | For detailed instructions you can look the laravel mix section here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Other-Configuration
     |
-    */
+     */
 
     'enabled_laravel_mix' => false,
     'laravel_mix_css_path' => 'css/app.css',
@@ -222,20 +222,20 @@ return [
     | For detailed instructions you can look here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Menu-Configuration
     |
-    */
+     */
 
     'menu' => [
         // Navbar items:
         [
-            'type'         => 'navbar-notification',
-            'id'           => 'my-notification',      // An ID attribute (required).
-            'icon'         => 'fas fa-bell',          // A font awesome icon (required).
-            'icon_color'   => '',              // The initial icon color (optional).
-            'label'        => 0,                      // The initial label for the badge (optional).
-            'label_color'  => 'danger',               // The initial badge color (optional).
-            'url'          => 'notifications/show',   // The url to access all notifications/elements (required).
-            'topnav_right' => true,                   // Or "topnav => true" to place on the left (required).
-            'dropdown_mode'   => true,                // Enables the dropdown mode (optional).
+            'type' => 'navbar-notification',
+            'id' => 'my-notification', // An ID attribute (required).
+            'icon' => 'fas fa-bell', // A font awesome icon (required).
+            'icon_color' => '', // The initial icon color (optional).
+            'label' => 0, // The initial label for the badge (optional).
+            'label_color' => 'danger', // The initial badge color (optional).
+            'url' => 'notifications/show', // The url to access all notifications/elements (required).
+            'topnav_right' => true, // Or "topnav => true" to place on the left (required).
+            'dropdown_mode' => true, // Enables the dropdown mode (optional).
             'dropdown_flabel' => 'All notifications', // The label for the dropdown footer link (optional).
             // 'update_cfg'   => [
             //     'url' => 'notifications/get',         // The url to periodically fetch new data (optional).
@@ -250,19 +250,22 @@ return [
         ],
         [
             'text' => 'Dashboard',
-            'url' => 'lms',
-            'icon' => 'far fa-fw fa-file',
+            'route' => 'sympozia.home',
+            'icon' => 'fas fa-fw fa-home',
+            'classes' => 'sympozia-nav',
         ],
         ['header' => 'MENU'],
         [
-            'text' => 'Page 1',
-            'url'  => 'lms/page-1',
-            'icon' => 'far fa-fw fa-newspaper',
+            'text' => 'About',
+            'route' => 'sympozia.about',
+            'icon' => 'fas fa-fw fa-info-circle',
+            'classes' => 'sympozia-nav',
         ],
         [
-            'text' => 'Page 2',
-            'url'  => 'lms/page-2',
-            'icon' => 'far fa-fw fa-newspaper',
+            'text' => 'Schedule',
+            'route' => 'sympozia.schedule',
+            'icon' => 'far fa-fw fa-calendar',
+            'classes' => 'sympozia-nav',
         ],
     ],
 
@@ -276,7 +279,7 @@ return [
     | For detailed instructions you can look the menu filters section here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Menu-Configuration
     |
-    */
+     */
 
     'filters' => [
         JeroenNoten\LaravelAdminLte\Menu\Filters\GateFilter::class,
@@ -298,7 +301,7 @@ return [
     | For detailed instructions you can look the plugins section here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Plugins-Configuration
     |
-    */
+     */
 
     'plugins' => [
         'Datatables' => [
@@ -384,7 +387,7 @@ return [
     | For detailed instructions you can look the iframe mode section here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/IFrame-Mode-Configuration
     |
-    */
+     */
 
     'iframe' => [
         'default_tab' => [
@@ -416,7 +419,7 @@ return [
     | For detailed instructions you can look the livewire here:
     | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Other-Configuration
     |
-    */
+     */
 
     'livewire' => false,
 ];
